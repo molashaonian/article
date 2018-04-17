@@ -24,8 +24,8 @@ select campaign_id,campaign_name,count(subscriber_id),count(distinct subscriber_
 group by campaign_id,campaign_name from campaigns;
 ```
 在MongoDB下就存在两种组合：1） campaign_id, campaign_name, subscriber_id  三个相同的分为一组，
-
-                                                  2） campaign_id, campaign_name  两个相同，subscriber_id 不同分为一组，
+						
+						   2） campaign_id, campaign_name  两个相同，subscriber_id 不同分为一组，
 
 最后通过这两种分组查询出按照  campaign_id 与 campaign_name  分组，subscriber_id 不同记录的个数
 
